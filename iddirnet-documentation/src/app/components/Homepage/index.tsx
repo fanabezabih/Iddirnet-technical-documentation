@@ -66,15 +66,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="max-w-7xl mx-auto">
-               <section id="target-users">
+        <div className="max-w-7xl mx-auto px-6">
+          <section id="target-users">
             <TargetUsers />
           </section>
           <section id="system-architecture">
             <SystemArchitecture />
           </section>
 
-     
           <section id="erd" className="py-12 text-center">
             <h2 className="text-3xl font-bold text-orange-500 mb-6">Entity Relationship Diagram (ERD)</h2>
             <Image
@@ -85,13 +84,16 @@ export default function HomePage() {
               className="rounded-xl shadow-lg max-w-full h-auto mx-auto"
             />
           </section>
-<section id="use-client" className="py-12">
+
+     <section id="use-client" className="py-12">
   <h2 className="text-3xl font-bold text-orange-500 text-center mb-12">Database Schema</h2>
-  
-  <div className="max-w-5xl mx-auto">
-    <div className="bg-white rounded-lg p-6 mb-8">
+
+  {/* Iddir + Membership — equal height */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+    {/* Iddir Model */}
+    <div className="bg-white rounded-lg p-6 flex flex-col min-h-[420px]">
       <h3 className="text-xl font-bold text-gray-800 mb-4">Iddir Model</h3>
-      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto">
+      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto flex-grow">
         <pre className="text-sm">
           <code>{`class Iddir(models.Model):
    iddir_id = models.AutoField(primary_key=True)
@@ -116,9 +118,10 @@ export default function HomePage() {
       </p>
     </div>
 
-    <div className="bg-white rounded-lg p-6 mb-8">
+    {/* Membership Model */}
+    <div className="bg-white rounded-lg p-6 flex flex-col min-h-[420px]">
       <h3 className="text-xl font-bold text-gray-800 mb-4">Membership Model</h3>
-      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto">
+      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto flex-grow">
         <pre className="text-sm">
           <code>{`class Membership(models.Model):
    ROLE_CHOICES = [("member", "Member"), ("leader", "Leader")]
@@ -145,10 +148,14 @@ export default function HomePage() {
         Manages user membership in Iddir communities with role-based access and invitation tokens.
       </p>
     </div>
+  </div>
 
-    <div className="bg-white rounded-lg p-6 mb-8">
+  {/* Payment + Renting — equal height */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+    {/* Payment Model */}
+    <div className="bg-white rounded-lg p-6 flex flex-col min-h-[420px]">
       <h3 className="text-xl font-bold text-gray-800 mb-4">Payment Model</h3>
-      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto">
+      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto flex-grow">
         <pre className="text-sm">
           <code>{`class Payment(models.Model):
    PAYMENT_TYPE_CHOICES = [("monthly", "Monthly"), ("rent", "Rent")]
@@ -177,12 +184,12 @@ export default function HomePage() {
       </p>
     </div>
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-  <div className="bg-white rounded-lg p-6">
-    <h3 className="text-xl font-bold text-gray-800 mb-4">Renting Model</h3>
-    <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md">
-      <pre className="text-sm whitespace-pre-wrap break-words">
-        <code>{`class Renting(models.Model):
+    {/* Renting Model */}
+    <div className="bg-white rounded-lg p-6 flex flex-col min-h-[420px]">
+      <h3 className="text-xl font-bold text-gray-800 mb-4">Renting Model</h3>
+      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md flex-grow">
+        <pre className="text-sm whitespace-pre-wrap break-words">
+          <code>{`class Renting(models.Model):
    TRANSACTION_TYPES = [("booking", "Booking"), ("renting", "Renting")]
    STATUS_CHOICES = [("active", "Active"), ("returned", "Returned"), ("cancelled", "Cancelled")]
    
@@ -197,18 +204,21 @@ export default function HomePage() {
    status = models.CharField(max_length=10)
    total_price = models.DecimalField(max_digits=10, decimal_places=2)
    created_at = models.DateTimeField(auto_now_add=True)`}</code>
-      </pre>
+        </pre>
+      </div>
+      <p className="text-gray-600 mt-3 text-sm">
+        Manages resource rentals between Iddir communities.
+      </p>
     </div>
-    <p className="text-gray-600 mt-3 text-sm">
-      Manages resource rentals between Iddir communities.
-    </p>
   </div>
 
-  <div className="bg-white rounded-lg p-6">
-    <h3 className="text-xl font-bold text-gray-800 mb-4">Resources Model</h3>
-    <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md">
-      <pre className="text-sm whitespace-pre-wrap break-words">
-        <code>{`class Resources(models.Model):
+  {/* Resources — unchanged (no height constraint) */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="bg-white rounded-lg p-6">
+      <h3 className="text-xl font-bold text-gray-800 mb-4">Resources Model</h3>
+      <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md">
+        <pre className="text-sm whitespace-pre-wrap break-words">
+          <code>{`class Resources(models.Model):
    resource_id = models.AutoField(primary_key=True)
    resource_name = models.CharField(max_length=50)
    image = models.ImageField(upload_to="resource_images/")
@@ -216,17 +226,16 @@ export default function HomePage() {
    unit_price = models.DecimalField(max_digits=10, decimal_places=2)
    iddir = models.ForeignKey(Iddir, on_delete=models.CASCADE)
    resource_status = models.CharField(max_length=20)`}</code>
-      </pre>
+        </pre>
+      </div>
+      <p className="text-gray-600 mt-3 text-sm">
+        Represents physical resources owned by Iddir communities.
+      </p>
     </div>
-    <p className="text-gray-600 mt-3 text-sm">
-      Represents physical resources owned by Iddir communities.
-    </p>
-  </div>
-</div>
   </div>
 </section>
 
-  <section id="features" className="py-12">
+          <section id="features" className="py-12">
             <h2 className="text-3xl font-bold text-orange-400 text-center mb-12">IddirNet Features</h2>
 
             {/* Feature 1 */}
@@ -302,10 +311,11 @@ export default function HomePage() {
               </div>
             </div>
           </section>
-            {/* Key Endpoints Section */}
+
+          {/* Key Endpoints Section */}
           <section id="key-endpoints" className="py-12">
             <h2 className="text-3xl font-bold text-orange-500 text-center mb-12">Key API Endpoints</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Endpoint 1 */}
               <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md transition-all hover:border-orange-300 group">
@@ -371,13 +381,10 @@ export default function HomePage() {
               </div>
             </div>
           </section>
+
           <section id="product-overview">
             <ProductOverview />
           </section>
-
-   
-
-    
 
           <div className="h-16"></div>
         </div>
