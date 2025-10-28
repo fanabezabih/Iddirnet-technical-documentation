@@ -19,7 +19,7 @@ export default function FooterSection() {
                             height={40}
                             className=""
                         />
-                        <p className="text-white text-[16px] mt-3">
+                        <p className="text-white text-[16px] mt-3 ml-">
                             Modern tool for Ethiopia’s timeless tradition of mutual support.
                         </p>
                     </div>

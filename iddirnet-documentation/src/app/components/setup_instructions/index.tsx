@@ -1,12 +1,12 @@
 export default function SetupInstructions() {
     return (
         <div
-
-            className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10"
+            id="setup-instructions"
+            className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-10 xl:max-w-[970px] xl:ml-65 2xl:max-w-[1350px] 2xl:ml-80"
             style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
         >
             <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-center" style={{ color: '#1E2736' }}>
-             Setup
+                Setup
             </h1>
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
                 <div
@@ -41,13 +41,13 @@ export default function SetupInstructions() {
                     className="lg:w-1/3 bg-white rounded-lg p-6 shadow-md border-2"
                     style={{ color: '#1E2736', borderColor: '#1E2736' }}
                 >
-                    <h2 className="text-xl font-semibold mb-4" style={{ color: '#FF9800'  }}>
+                    <h2 className="text-xl font-semibold mb-4" style={{ color: '#FF9800' }}>
                         Frontend Mobile Setup
                     </h2>
                     <ol className="list-decimal list-inside space-y-2 text-sm sm:text-base">
                         <li>Open the Android project folder</li>
                         <li>Sync and download all dependencies</li>
-                        <li>Build the project </li>
+                        <li>Build the project</li>
                         <li>Run the app in an emulator</li>
                         <li>Generate Signed APK Bundle</li>
                         <li>Install and start the app on a device</li>
