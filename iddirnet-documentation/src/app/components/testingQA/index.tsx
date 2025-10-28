@@ -181,7 +181,7 @@ export default function Testing() {
           </p>
           
           <a
-            href="#"
+            href="https://documenter.getpostman.com/view/45526338/2sB3HqHdvd"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center font-semibold text-base text-orange-400 hover:text-orange-500 transition-colors"
