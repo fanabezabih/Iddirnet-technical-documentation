@@ -5,11 +5,11 @@ import { FaArrowRight } from 'react-icons/fa';
 export default function Testing() {
   return (
     <div
-      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-85 xl:ml-67"
+      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-105 xl:ml-75"
       style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
     >
       <section className="flex flex-col md:flex-row gap-6 md:gap-16 lg:gap-60 items-center">
-        <div className="2xl:w-[700px] xl:w-[500px] space-y-5">
+        <div className="2xl:w-[700px] xl:w-[410px] space-y-5">
           <h1 className="text-3xl sm:text-4xl font-bold" style={{ color: '#FF9800' }}>
             Quality Assurance
           </h1>

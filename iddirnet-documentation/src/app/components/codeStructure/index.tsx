@@ -2,10 +2,10 @@ export default function CodeStructure() {
 
     return (
         <div
-            className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-85 xl:ml-67"
+            className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-105 xl:ml-75"
             style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
         >
-            <section className="2xl:max-w-[1600px] xl:max-w-[1100px]">
+            <section className="2xl:max-w-[1600px] xl:max-w-[964px]">
                 <h1
                     className="text-2xl sm:text-3xl font-bold mb-6"
                     style={{ color: '#FF9800' }}

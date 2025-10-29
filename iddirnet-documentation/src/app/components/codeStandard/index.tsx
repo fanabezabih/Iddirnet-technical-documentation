@@ -4,7 +4,7 @@ import React from "react";
 export default function NamingConventions() {
   return (
     <div
-      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-85 xl:ml-67"
+      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-105 xl:ml-75"
       style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
     >
     
