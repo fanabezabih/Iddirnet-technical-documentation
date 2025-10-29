@@ -119,7 +119,7 @@ export default function HomePage() {
     </div>
 
     {/* Membership Model */}
-    <div className="bg-white rounded-lg p-6 flex flex-col min-h-[420px]">
+    <div className="bg-white rounded-lg p-6 flex flex-col min-h-[450px]">
       <h3 className="text-xl font-bold text-gray-800 mb-4">Membership Model</h3>
       <div className="bg-white border-2 border-orange-400 text-gray-800 p-4 rounded-md overflow-x-auto flex-grow">
         <pre className="text-sm">

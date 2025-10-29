@@ -29,7 +29,7 @@ export default function SystemArchitecture() {
         <div className="flex flex-col items-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-2">Backend (API)</h3>
           <div className="w-24 h-1 bg-orange-500 rounded-full mb-4"></div>
-          <p className="text-gray-700 leading-relaxed max-w-2xl text-center">
+          <p className="text-gray-700 leading-relaxed max-w-2xl text-lg text-center">
             Django REST Framework handles API endpoints, managing HTTP requests, data serialization, validation, and authentication.
           </p>
         </div>
@@ -38,11 +38,12 @@ export default function SystemArchitecture() {
         <div className="flex flex-col items-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-2">Database</h3>
           <div className="w-24 h-1 bg-orange-500 rounded-full mb-4"></div>
-          <p className="text-gray-700 leading-relaxed max-w-2xl text-center">
+          <p className="text-gray-700 leading-relaxed text-lg max-w-2xl text-center">
             PostgreSQL for relational data storage, ensuring reliability, ACID compliance, and scalability for Iddir communities.
           </p>
         </div>
       </div>
     </section>
+    
   );
 }
