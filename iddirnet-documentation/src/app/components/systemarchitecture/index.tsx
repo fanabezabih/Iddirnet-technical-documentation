@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function SystemArchitecture() {
   return (
     <section className="py-12 text-center">
-      <h2 className="text-3xl font-bold text-orange-500 mb-8">System Architecture</h2>
+      <h2 className="text-3xl font-bold  mb-8" style={{ color: '#FF9800' }}>System Architecture</h2>
 
       {/* Clickable Architecture Diagram */}
       <div className="flex justify-center mb-12">

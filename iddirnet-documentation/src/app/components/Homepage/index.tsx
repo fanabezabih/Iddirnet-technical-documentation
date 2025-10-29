@@ -75,7 +75,7 @@ export default function HomePage() {
           </section>
 
           <section id="erd" className="py-12 text-center">
-            <h2 className="text-3xl font-bold text-orange-500 mb-6">Entity Relationship Diagram (ERD)</h2>
+            <h2 className="text-3xl font-bold  mb-6" style={{ color: '#FF9800' }}>Entity Relationship Diagram (ERD)</h2>
             <Image
               src="/images/ERD.png"
               alt="Entity Relationship Diagram"
@@ -86,7 +86,7 @@ export default function HomePage() {
           </section>
 
      <section id="use-client" className="py-12">
-  <h2 className="text-3xl font-bold text-orange-500 text-center mb-12">Database Schema</h2>
+  <h2 className="text-3xl font-bold  text-center mb-12"style={{ color: '#FF9800' }}>Database Schema</h2>
 
   {/* Iddir + Membership — equal height */}
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -236,7 +236,7 @@ export default function HomePage() {
 </section>
 
           <section id="features" className="py-12">
-            <h2 className="text-3xl font-bold text-orange-400 text-center mb-12">IddirNet Features</h2>
+            <h2 className="text-3xl font-bold  text-center mb-12"style={{ color: '#FF9800' }}>IddirNet Features</h2>
 
             {/* Feature 1 */}
             <div className="flex flex-col md:flex-row items-start gap-8 mb-12">
@@ -261,7 +261,7 @@ export default function HomePage() {
                 <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">2</div>
               </div>
               <div className="bg-orange-100 text-gray-900 p-6 rounded-xl max-w-3xl">
-                <h3 className="text-xl font-bold text-orange-600 mb-4">Resource Renting</h3>
+                <h3 className="text-xl font-bold  mb-4" style={{ color: '#FF9800' }}>Resource Renting</h3>
                 <p className="leading-relaxed">
                   Leaders will be able to see all the Iddirs that are renting out their materials.
                   They can then be able to decide which Iddir they want to rent from and select the materials they want to rent from that Iddir,

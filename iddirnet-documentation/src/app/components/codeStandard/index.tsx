@@ -10,7 +10,7 @@ export default function NamingConventions() {
     
       <section className="flex flex-col md:flex-row gap-6 md:gap-16 lg:gap-60 items-center ">
         <div className=" space-y-5">
-          <h1 className="text-3xl sm:text-4xl font-bold" style={{ color: '#FF9800' }}>
+          <h1 className="text-2xl sm:text-3xl font-bold" style={{ color: '#FF9800' }}>
             Naming Conventions & Coding Standards
           </h1>
           <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify 2xl:ml-0 2xl:w-[1225px]  xl:w-[900px] ">
