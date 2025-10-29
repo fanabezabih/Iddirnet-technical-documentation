@@ -184,7 +184,7 @@ export default function Testing() {
             href="https://documenter.getpostman.com/view/45526338/2sB3HqHdvd"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center font-semibold text-base text-orange-400 hover:text-orange-500 transition-colors"
+            className="inline-flex items-center font-semibold text-base  hover:text-orange-400 transition-colors" style={{ color: '#FF9800' }}
           >
             View Postman Tests
             <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />

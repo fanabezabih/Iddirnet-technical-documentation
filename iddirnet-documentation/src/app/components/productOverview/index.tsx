@@ -19,7 +19,7 @@ export default function ProductOverview() {
     <section className="py-5">
       {/* Product Overview */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-orange-500 mb-4">Product Overview</h2>
+        <h2 className="text-3xl font-bold  mb-4" style={{ color: '#FF9800' }}>Product Overview</h2>
       </div>
 
       <div className="flex justify-center mb-8">
@@ -35,7 +35,8 @@ export default function ProductOverview() {
       <div className="flex justify-center mb-12">
         <Link
           href="https://play.google.com/store/search?q=iddirnet&c=apps&hl=en"
-          className="inline-block bg-white text-orange-400 border-2 border-orange-400 hover:border-orange-500 hover:bg-orange-50 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-md"
+          className="inline-block bg-white  border-2 border-orange-400 hover:border-orange-500 hover:bg-orange-50 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-md"
+          style={{ color: '#FF9800' }}
         >
           Mobile App
         </Link>
@@ -46,7 +47,7 @@ export default function ProductOverview() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Admin Dashboard */}
           <div className="text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-2xl font-bold text-orange-500 mb-4">Admin Dashboard</h3>
+            <h3 className="text-2xl font-bold  mb-4" style={{ color: '#FF9800' }}>Admin Dashboard</h3>
             <div className="flex justify-center mb-4">
               <Image
                 src="/images/dashboard.png"
@@ -76,7 +77,7 @@ export default function ProductOverview() {
 
           {/* Informational Website */}
           <div className="text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
-            <h3 className="text-2xl font-bold text-orange-500 mb-4">Informational Website</h3>
+            <h3 className="text-2xl font-bold  mb-4" style={{ color: '#FF9800' }}>Informational Website</h3>
             <div className="flex justify-center mb-4">
               <div className="relative w-full max-w-[900px] aspect-[1160/700] rounded-xl overflow-hidden shadow-inner">
                 {infoImages.map((src, index) => (
@@ -101,7 +102,7 @@ export default function ProductOverview() {
               Designed to educate and onboard new communities.
             </p>
             <div className="flex justify-center">
-              <Link href="https://iddirnet.vercel.app/" className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-700 font-medium">
+              <Link href="https://iddirnet.vercel.app/" className="inline-flex items-center gap-2  hover:text-orange-700 font-medium" style={{ color: '#FF9800' }}>
                 Visit Website
                 <Image
                   src="/images/arrow.png"
