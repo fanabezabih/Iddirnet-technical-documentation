@@ -1,7 +1,7 @@
 export default function Deployment() {
     return (
         <div 
-            className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-105 xl:ml-75" 
+            className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-110 xl:ml-75" 
             style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
         >
             <section className="flex flex-col md:flex-row gap-6 md:gap-16 lg:gap-60 items-center">
@@ -9,7 +9,7 @@ export default function Deployment() {
                     <h1 className="text-3xl sm:text-4xl font-bold" style={{ color: '#FF9800' }}>
                         Deployment Strategy
                     </h1>
-                    <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify xl:w-[900] 2xl:w-[1100]">
+                    <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify xl:w-[900] 2xl:w-[1222]">
                         Deploying the IddirNet platform components involved careful consideration of performance, scalability,
                         ease of maintenance, and user accessibility. We chose deployment solutions that maximize reliability while aligning
                         with community needs and technology stack strengths. Across backend, frontend, and mobile app deployments, our strategy
@@ -18,7 +18,7 @@ export default function Deployment() {
                 </div>
             </section>
 
-            <section className="mt-16 sm:mt-20 2xl:max-w-[1400px] xl:max-w-[900px]">
+            <section className="mt-16 sm:mt-20 2xl:max-w-[1400px] xl:max-w-[900px] 2xl:ml-20">
                 <div className="space-y-8 sm:space-y-12">
                     <div className="relative bg-white rounded-xl p-6 shadow-sm border-2 border-[#FF9800] hover:shadow-md transition-shadow">
                         <div

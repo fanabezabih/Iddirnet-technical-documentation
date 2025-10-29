@@ -5,11 +5,11 @@ import { FaArrowRight } from 'react-icons/fa';
 export default function Testing() {
   return (
     <div
-      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-105 xl:ml-75"
+      className="max-w-[1272px] mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-110 xl:ml-75"
       style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
     >
-      <section className="flex flex-col md:flex-row gap-6 md:gap-16 lg:gap-60 items-center">
-        <div className="2xl:w-[700px] xl:w-[410px] space-y-5">
+      <section className="flex flex-col md:flex-row gap-6 md:gap-16 2xl:gap-25 lg:gap-60 items-center">
+        <div className="2xl:w-[800px] xl:w-[410px] space-y-5">
           <h1 className="text-3xl sm:text-4xl font-bold" style={{ color: '#FF9800' }}>
             Quality Assurance
           </h1>
@@ -30,9 +30,9 @@ export default function Testing() {
           </a>
         </div>
 
-        {/* Enhanced Full-Width Swagger Image */}
-        <div className="md:w-1/3 flex justify-center">
-          <div className="w-full max-w-md">
+      
+        <div className="md:w-1/3 flex justify-center ml-20">
+          <div className="w-[350px] max-w-md">
             <div className="relative group">
               <img
                 src="/images/swagger.png"
@@ -159,7 +159,7 @@ export default function Testing() {
           <div className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
             <pre className="text-sm">
               <code>{`python manage.py test
-# Runs tests in feedlink_back_end/tests/`}</code>
+# Runs tests in iddirnet_back_end/tests/`}</code>
             </pre>
           </div>
           

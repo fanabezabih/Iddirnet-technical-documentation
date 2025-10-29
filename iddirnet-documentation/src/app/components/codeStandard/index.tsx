@@ -4,7 +4,7 @@ import React from "react";
 export default function NamingConventions() {
   return (
     <div
-      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-105 xl:ml-75"
+      className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-8 sm:space-y-12 font-sans 2xl:ml-110 xl:ml-75"
       style={{ fontFamily: "'Nunito', sans-serif", color: '#171717' }}
     >
     
@@ -13,7 +13,7 @@ export default function NamingConventions() {
           <h1 className="text-3xl sm:text-4xl font-bold" style={{ color: '#FF9800' }}>
             Naming Conventions & Coding Standards
           </h1>
-          <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify 2xl:ml-0 2xl:w-[1100px]  xl:w-[900px] ">
+          <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-justify 2xl:ml-0 2xl:w-[1225px]  xl:w-[900px] ">
             Consistent naming conventions and coding standards are essential for maintaining code quality,
             readability, and collaboration across the IddirNet platform. These standards ensure that all team members
             can easily understand and work with the codebase, regardless of which component they are focusing on.
@@ -24,8 +24,8 @@ export default function NamingConventions() {
       </section>
 
  
-      <section className="mt-16 sm:mt-20 2xl:max-w-[1400px] xl:max-w-[900px] ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+      <section className="mt-16 sm:mt-20 2xl:max-w-[1400px] xl:max-w-[900px] 2xl:ml-22">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-9 sm:gap-8">
           <div className="flex flex-col gap-6 sm:gap-8">
             <section className="bg-[#0c1929] text-white rounded-md border border-[#B88704] p-4 sm:p-5 shadow-sm">
               <h2 className="text-xl sm:text-3xl font-light mb-3 sm:mb-4">Frontend</h2>
@@ -119,8 +119,8 @@ export default function NamingConventions() {
               </ul>
             </section>
           </div>
-          <div className="flex flex-col gap-6 sm:gap-8">
-            <section className="flex items-center justify-center border border-[#B88704] rounded-md bg-white p-32 sm:p-36 shadow-sm min-h-[600px]">
+          <div className="flex flex-col gap-6 sm:gap-8 ">
+            <section className="flex items-center justify-center border border-[#B88704] rounded-md bg-white p-32 sm:p-36 shadow-sm min-h-[670px]">
               <h1 className="text-2xl sm:text-4xl font-bold text-[#0D3B3A] text-center leading-relaxed">
                 Naming
                 <br />
@@ -129,7 +129,7 @@ export default function NamingConventions() {
                 Coding Standards
               </h1>
             </section>
-            <section className="bg-[#0c1929] text-white rounded-md border border-cyan-800 p-4 sm:p-5 pb-40 shadow-sm min-h-[770px]">
+            <section className="bg-[#0c1929] text-white rounded-md border border-cyan-800 p-4 sm:p-5 pb-40 shadow-sm min-h-[825px]">
               <h2 className="text-xl sm:text-3xl font-light mb-3 sm:mb-4 tracking-wide">Backend</h2>
               <p className="text-lg sm:text-2xl mb-2">Structure & Functions</p>
               <ul className="list-disc pl-5 mb-3 space-y-1 text-sm sm:text-base">
